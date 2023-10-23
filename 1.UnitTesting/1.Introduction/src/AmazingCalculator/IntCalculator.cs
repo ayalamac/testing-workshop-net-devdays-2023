@@ -2,7 +2,7 @@
 
 public class IntCalculator
 {
-    public int Add(int a, int b) => a + b + 1;
+    public int Add(int a, int b) => a + b;
 
     public int Subtract(int a, int b) => a - b;
 
