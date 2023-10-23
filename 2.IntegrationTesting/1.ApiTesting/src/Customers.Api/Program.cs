@@ -1,3 +1,4 @@
+using Customers.Api;
 using Customers.Api.Database;
 using Customers.Api.Repositories;
 using Customers.Api.Services;
@@ -21,7 +22,7 @@ builder.Services.AddFluentValidationAutoValidation(c =>
 {
     c.DisableDataAnnotationsValidation = true;
 });
-builder.Services.AddValidatorsFromAssemblyContaining<Program>();
+builder.Services.AddValidatorsFromAssemblyContaining<ICustomerApiMarker>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
